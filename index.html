@@ -2369,7 +2369,8 @@ window.HF_CONFIG = {
     /* lien de compte dans l'en-tête */
     var acc = document.getElementById('acc-link');
     if (acc) {
-      var isSalon = window.HFAuth && HFAuth.isSalon();
+            var isSalon = window.HFAuth && HFAuth.isIn();
+
       acc.textContent = isSalon ? 'Espace équipe · connecté' : 'Espace équipe';
       acc.setAttribute('href', '#/admin');
     }
