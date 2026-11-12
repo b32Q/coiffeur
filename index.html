@@ -386,6 +386,7 @@ footer{background:var(--ink);color:rgba(246,242,233,.7);padding:clamp(40px,6vw,7
 /* --- nav un peu plus dense (7 entrées) --- */
 .nav{gap:clamp(10px,1.4vw,22px)}
 .nav a{font-size:13px}
+   @media (min-width:1081px){.nav .nav-dup{display:none}}
 @media (max-width:1080px){
   .js .nav{
     position:fixed;inset:74px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);
@@ -911,7 +912,7 @@ footer{background:var(--ink);color:rgba(246,242,233,.7);padding:clamp(40px,6vw,7
       <a href="#/enfants" data-route="enfants">Enfants</a>
       <a href="#/produits" data-route="produits">Produits</a>
       <a href="#/salon" data-route="salon">Le salon</a>
-      <a href="#/reserver" data-route="reserver">Rendez-vous</a>
+            <a href="#/reserver" data-route="reserver" class="nav-dup">Rendez-vous</a>
       <a href="#/contact" data-route="contact">Contact</a>
     </nav>
     <a class="acc-link" id="acc-link" href="#/admin">Espace équipe</a>
